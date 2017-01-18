@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)./ -->
+<html class="pixel-ratio-1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HSEA Mobile Demo</title>
+    <meta name="description" content="MSUI: Build mobile apps with simple HTML, CSS, and JS components.">
+    <meta name="author" content="XXXX前端">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+    	var position="../../../";document.write(unescape("%3Cscript src='"+position+"indexTota.js?v="+Math.random()+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+	
+  </head>
+  <body>
+  	<div class="page page-current" id="fund_grading_queryHistory"   data-pageTitle="交易查询" data-refresh="true" data-isCheckLogin="true" data-script='trade/scripts/fund/grading/queryHistory.js'>
+	<header class="header">
+    	<div class="top_title">
+        	<a href="javascript:void(0);" class="icon_back text">查询</a>
+        	<div class="toggle_nav">
+                <ul>
+                    <li class="active"><a href="javascript:void(0);">历史委托</a></li>
+                    <li><a href="javascript:void(0);">历史成交</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="time date_filter">
+        	<ul>
+            	<li id="setStart"><span>开始日期</span><p id="startDate">2016-03-28</p>
+            	</li>
+            	<li class="dot"></li>
+                <li id="setEnd"><span>截止日期</span><p id="endDate">2016-03-28</p>
+                </li>
+        	</ul>
+    		<input id="startInput" type="text" style="display: none;" readonly>
+        	<input id="endInput" type="text" style="display: none;" readonly>
+        	<a href="javascript:void(0);" class="btn">查询</a>
+        </div>
+        <div id="v_container_funds_jj" style="margin-top: 5px;">
+       		<div class="visc_wrapper" id="v_wrapper_funds_jj" data-iscrollPageId="mall_itemsJj">
+       			<div class="visc_scroller">
+       				<div class="visc_pullDown" style="display:none;">
+       					<span class="visc_pullDownIcon"></span>
+       					<div class="visc_pullDownDiv">
+       						<span class="visc_pullDownLabel">下拉刷新</span><br/>
+							时间更新于：<span class="visc_pullDownTime"></span>
+       					</div>
+       				</div>
+       				
+		            <div class="fund_list2"></div>
+		            <div class="no_data" style="display:none;padding-top: 100px;">
+       					<span class="icon"></span>
+           				<p style="text-align:center;">暂无记录</p>
+      				</div>
+      				<div class="visc_pullUp" style="display:none;">
+       					<span class="visc_pullUpIcon"></span>
+       					<div class="visc_pullUpDiv">
+							<span class="visc_pullUpLabel">上拉加载下一页</span><br/>
+							时间更新于：<span class="visc_pullUpTime"></span>
+						</div>
+       				</div>
+       			</div>
+       		</div>
+        </div>
+       
+    </section>
+</div>
+</body></html>

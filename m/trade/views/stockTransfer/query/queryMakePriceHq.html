@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)./ -->
+<html class="pixel-ratio-1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>股票交易</title>
+    <meta name="description" content="MSUI: Build mobile apps with simple HTML, CSS, and JS components.">
+    <meta name="author" content="XXXX前端">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <script>
+    	var position="../../../";document.write(unescape("%3Cscript src='"+position+"indexTota.js?v="+Math.random()+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+	
+  </head>
+  <body>
+<div class="page page-current" id="stockTransfer_query_queryMakePriceHq" data-pageTitle="股份转让"   data-refresh="true" data-isCheckLogin="true" data-script='trade/scripts/stockTransfer/query/queryMakePriceHq.js'>
+
+    <div id="query_page" style="display: block">
+        <header class="header">
+            <div class="top_title">
+                <a href="javascript:void(0);" class="icon_back"></a>
+                <h3>定价申报行情-查询</h3>
+            </div>
+        </header>
+        <section class="main">
+            <div class="tnb_form2">
+                <h5>请选择查询类别</h5>
+                <div class="toggle_nav">
+                    <ul>
+                        <!--<li><a href="javascript:void(0);" query-type="0">全部</a></li>-->
+                        <li class="active"><a href="javascript:void(0);" query-type="1">定价买入</a></li>
+                        <li><a href="javascript:void(0);" query-type="2">定价卖出</a></li>
+                        <li><a href="javascript:void(0);" query-type="2">意向买入</a></li>
+                        <li><a href="javascript:void(0);" query-type="2">意向卖出</a></li>
+                    </ul>
+                </div>
+                <div class="input_text text">
+                    <label>股票代码</label><input type="text" class="t1" js-key="shares" maxlength="6" required id="stockCode"/>
+                </div>
+                <div class="ce_btn">
+                    <a href="javascript:void(0);" id="query_button">查 询</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="result_page" style="display: none">
+        <header class="header">
+            <div class="top_title">
+                <a href="javascript:void(0);" class="icon_back"></a>
+                <h3>定价申报行情-结果</h3>
+                <a href="javascript:void(0);" class="icon_refresh"></a>
+            </div>
+        </header>
+        <section class="main">
+            <div class="fund_table">
+            </div>
+        </section>
+    </div>
+</div>
+</body>
+</html>

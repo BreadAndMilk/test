@@ -1,0 +1,99 @@
+<!--买入平仓-->
+<!DOCTYPE html>
+<html class="pixel-ratio-1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>买入平仓</title>
+    <meta name="description" content="MSUI: Build mobile apps with simple HTML, CSS, and JS components.">
+    <meta name="author" content="XXXX前端">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+    	var position="../../../";document.write(unescape("%3Cscript src='"+position+"indexTota.js?v="+Math.random()+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+	
+
+  </head>
+  <body>
+  	<div class="page page-current" id="option_order_buyingPositions"   data-pageTitle="买入平仓" data-refresh="true" data-isCheckLogin="true" data-script='trade/scripts/option/order/buyingPositions.js'>
+	<header class="header">
+    	<div class="top_title">
+        	<a href="javascript:void(0)" class="icon_back"></a>
+        	<h3>买入平仓</h3>
+        </div>
+    </header>
+	<section class="main">
+		<div class="trade_main stock_option">
+			<div class="trade_form">
+				<div class="input_box input_code">
+                    <div class="input_text select_box deleteBefore">
+                    	<input type="number" js-key="shares" class="t1" id="stockCode" maxLength="6" placeholder="证券代码"><span><em class="placeholder stockCode">证券名称</em></span>
+                    	<div id="stock_list"></div>
+                    </div>
+               </div>
+				<div class="input_text text" id="month">
+	            	<label>到期月份</label><div class="select_box"><p>请选择</p>
+					<div id="month_list" class="select_list"></div></div>
+	            </div>
+	            <div class="input_text text" id="exercise">
+	            	<label>行权价格</label><div class="select_box"><p>请选择</p>
+					<div id="exercise_list" class="select_list"></div></div>
+	            </div>
+	            <div class="input_text text" id="month">
+	            	<label>合约代码</label><input type="tel" class="t1" id="optionCode" value="" readonly/>
+	            </div>
+	            <div class="input_text text" id="month">
+	            	<label>合约名称</label><input type="text" class="t1" id="optionName" value="" readonly/>
+	            </div>
+	            <div class="input_text text" id="quote">
+	            	<label>报价方式</label><div class="select_box"><p value="1">限价GFD</p><div id="market_list" class="select_list"></div></div>
+	            </div>
+                <div class="input_select">
+                	<div class="input_value in">
+                        <input type="number" js-key="number" class="t1" id="stockPrice" maxLength="8" custom_keybord="0" placeholder="输入价格" style="padding: 0;"/>
+                        <em class="less"></em><em class="add"></em>
+                    </div>
+					<p class="quote_tet" style="display: none;"></p>
+                </div>
+                <p class="limit">可平数量 <strong>--</strong> 股</p>
+                <div class="input_box input_num">
+                	<div class="input_text">
+                		<input type="tel" js-key="tel"  class="t1" id="stockNum" maxLength="8" style="text-align: center;" placeholder="输入数量"><em>股</em>
+                    </div>
+                </div>
+                <div class="ce_btn in">
+               		<a href="javascript:void(0);" id="submitOrder"><div class="order">提交委托<span id="total"></span></div></a>
+               	</div>
+            </div>
+        	<div class="five_box">
+            	<ul>
+                	<li><em>--</em>卖5<span>--</span></li>
+                    <li><em>--</em>卖4<span>--</span></li>
+                    <li><em>--</em>卖3<span>--</span></li>
+                    <li><em>--</em>卖2<span>--</span></li>
+                    <li><em>--</em>卖1<span>--</span></li>
+            	</ul>
+                <hr />
+                <ul>
+                	<li><em>--</em>买1<span>--</span></li>
+                    <li><em>--</em>买2<span>--</span></li>
+                    <li><em>--</em>买3<span>--</span></li>
+                    <li><em>--</em>买4<span>--</span></li>
+                    <li><em>--</em>买5<span>--</span></li>
+            	</ul>
+            </div>
+        </div>
+        
+        <div class="fund_table mt10" style="overflow-y:auto;">
+           	<div class='stock_opt_list'></div>
+            <div class="no_data" style="display:none;">
+		        <span class="icon"></span>
+			    <p style="text-align:center;">暂无持仓记录</p>
+	        </div>
+        </div>
+    </section>
+</div>
+</body></html>
+<!--买入平仓-->

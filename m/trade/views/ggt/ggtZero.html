@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)./ -->
+<html class="pixel-ratio-1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>股票交易</title>
+    <meta name="description" content="MSUI: Build mobile apps with simple HTML, CSS, and JS components.">
+    <meta name="author" content="XXXX前端">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <script>
+    	var position="../../";document.write(unescape("%3Cscript src='"+position+"indexTota.js?v="+Math.random()+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+	
+  </head>
+  <body>
+  
+<div class="page page-current" id="ggt_ggtZero" data-pageTitle="零股卖出" data-refresh="true" data-isCheckLogin="true" data-script='trade/scripts/ggt/ggtZero.js'>
+	<header class="header">
+    	<div class="top_title">
+        	<a href="javascript:void(0);" class="icon_back text">下单</a>
+        	<h3>港股零股卖出</h3>
+        </div>
+    </header>
+    <section class="main">
+		<!--<div class="tab_nav">
+        	<ul>
+            	<li><a href="javascript:void(0);" to-page="ggt_ggtBuy">买入</a></li>
+            	<li><a href="javascript:void(0);" to-page="ggt_ggtSell">卖出</a></li>
+                <li class="active"><a href="javascript:void(0);" to-page="ggt_ggtZero">零股</a></li>
+                <li><a href="javascript:void(0);" to-page="ggt_ggtCancel">撤单</a></li>
+                <li><a href="javascript:void(0);" to-page="ggt_ggtHolding">持仓</a></li>
+                <li><a href="javascript:void(0);" to-page="ggt_ggtQuery">查询</a></li>
+        	</ul>
+        </div>-->
+	<div class="trade_main clearfix mt10 h_36">
+          <div class="trade_form">
+               <div class="input_box input_code select_box deleteBefore">
+                    <div class="input_text">
+                    	<input type="tel" class="t1" js-key="shares" id="stockCode" maxLength="6" value="" placeholder="证券代码" ><span><em style="color:#ccc">证券名称</em></span>
+                    	<div id="stock_list"></div>
+                    </div>
+               </div>
+               <!--<p style="margin-bottom: -5px;margin-top: 5px;text-align: center;"><strong>额度<em id="surplus_quota">--</em></strong></p>-->
+               <p class="value">
+               		<span>汇率<em class="ared" id="exchange_rate">--</em></span><span>每手<em class="" id="each_hand">--</em>股</span>
+               </p>
+               <div class="input_box">
+                	<div class="input_value out">
+                        <input type="number" js-key="number" class="t1" id="stockPrice" maxLength="11" custom_keybord="0"/>
+                        <!--<em class="HK">港币</em>--><em class="less"></em><em class="add"></em>
+                    </div>
+               </div>
+               <p class="limit">可卖 <strong id="max_Num">--</strong>股</p>
+               <div class="input_box input_num mt10">
+                	<div class="input_text">
+                		<input type="tel" class="t1" js-key="tel" id="stockNum" maxLength="7" style="height:0.39rem;text-align:center"><em>股</em>
+                    </div>
+               </div>
+               <div class="ce_btn out">
+                <a href="javascript:void(0);" id="submitOrder" style="height:0.40rem">卖出<small id="total"></small></a> 
+               	<!-- <a href="javascript:void(0);" id="submitOrder" style="height:0.40rem">卖出</a>  -->  	
+               </div>
+            </div>
+
+        	<div class="five_box">
+            	<ul>
+                	<li><em>--</em>卖5<span>--</span></li>
+                    <li><em>--</em>卖4<span>--</span></li>
+                    <li><em>--</em>卖3<span>--</span></li>
+                    <li><em>--</em>卖2<span>--</span></li>
+                    <li><em>--</em>卖1<span>--</span></li>
+            	</ul>
+                <hr />
+                <ul>
+                	<li><em>--</em>买1<span>--</span></li>
+                    <li><em>--</em>买2<span>--</span></li>
+                    <li><em>--</em>买3<span>--</span></li>
+                    <li><em>--</em>买4<span>--</span></li>
+                    <li><em>--</em>买5<span>--</span></li>
+            	</ul>
+            </div>
+        </div>
+        <!--trade_main-->
+        <div class="fund_table mt10" style="overflow-y:auto;">
+            <div class="ce_table position_div ggt"></div>
+            <div class="no_data" style="display:none;">
+		        <span class="icon"></span>
+			    <p style="text-align:center;">暂无持仓记录</p>
+	        </div>
+        </div>
+    </section>
+</div>
+</body></html>

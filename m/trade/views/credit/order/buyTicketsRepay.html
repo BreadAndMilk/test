@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)./ -->
+<html class="pixel-ratio-1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>股票交易</title>
+    <meta name="description" content="MSUI: Build mobile apps with simple HTML, CSS, and JS components.">
+    <meta name="author" content="XXXX前端">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <script>
+    	var position="../../../";document.write(unescape("%3Cscript src='"+position+"indexTota.js?v="+Math.random()+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+	
+  </head>
+  <body>
+<div class="page page-current" key-panel-main='true' id="credit_order_buyTicketsRepay"   data-pageTitle="买券还券" data-refresh="true" data-isCheckLogin="true" data-script='trade/scripts/credit/order/buyTicketsRepay.js'>
+	<header class="header">
+    	<div class="top_title">
+        	<a href="javascript:void(0);" class="icon_back text">下单</a>
+        	<h3>买券还券</h3>
+        	<a href="javascript:void(0);" class="noicon_text icon_search"></a>
+        </div>
+    </header>
+    <section class="main">
+    	<!--<div class="toggle_nav toggle_nav_lit">
+            <ul>
+                <li class="active"><a href="javascript:void(0);">买券还券</a></li>
+                <li><a href="javascript:void(0);">指定合约</a></li>
+            </ul>
+        </div>-->
+        <div class="rule_select" style="display: none;">
+        	<p>选择合约<span>请选择</span></p>
+        </div>
+		<div class="trade_main clearfix">
+            <div class="trade_form">
+               <div class="input_box input_code">
+                    <div class="input_text select_box deleteBefore">
+                    	<input type="text" js-key="shares" class="t1" id="stockCode" maxLength="6" value="" placeholder="证券代码"><span><em style="color: #ccc;">证券名称</em></span>
+                    	<div id="stock_list"></div>
+                    </div>
+               </div>
+               <p class="value">
+               		<span>涨停 <em class="ared" id="up_stop">--</em></span><span>跌停 <em class="agreen" id="down_stop">--</em></span>
+               </p>
+               <div class="value_btn" value="0">
+                	<a href="javascript:void(0);" class="current">限价委托</a><a href="javascript:void(0);">市价委托</a>
+                </div>
+                <div class="input_select mt10">
+                	<div class="input_value in">
+                        <input type="number" js-key="number" class="t1" id="stockPrice" maxLength="11" custom_keybord="0" placeholder="输入价格" style="padding: 0;"/>
+                        <em class="less"></em><em class="add"></em>
+                    </div>
+	            	<div class="select_box" id="market_list" style="display: none;">
+	                	<p></p>
+	                	<ul>
+	               	 	</ul>
+	                 </div>
+                </div>
+                <p class="limit">可买 <strong>--</strong> 股</p>
+                <div class="input_box input_num">
+                	<div class="input_text">
+                		<input type="tel" js-key="tel"  class="t1" id="stockNum" maxLength="11" style="text-align: center;" placeholder="输入数量"><em>股</em>
+                    </div>
+                </div>
+               <div class="ce_btn in">
+               		<a href="javascript:void(0);" id="submitOrder"><div class="order">买券还券<span id="total"></span></div></a>
+               </div>
+            </div>
+        	<div class="five_box">
+            	<ul>
+                	<li><em>--</em>卖5<span>--</span></li>
+                    <li><em>--</em>卖4<span>--</span></li>
+                    <li><em>--</em>卖3<span>--</span></li>
+                    <li><em>--</em>卖2<span>--</span></li>
+                    <li><em>--</em>卖1<span>--</span></li>
+            	</ul>
+                <hr />
+                <ul>
+                	<li><em>--</em>买1<span>--</span></li>
+                    <li><em>--</em>买2<span>--</span></li>
+                    <li><em>--</em>买3<span>--</span></li>
+                    <li><em>--</em>买4<span>--</span></li>
+                    <li><em>--</em>买5<span>--</span></li>
+            	</ul>
+            </div>
+        </div>
+        <!--trade_main-->
+        <div class="fund_table mt10" style="overflow-y:auto;">
+           	<div class='ce_table position_div'></div>
+            <div class="no_data" style="display:none;">
+		        <span class="icon"></span>
+			    <p style="text-align:center;">暂无持仓记录</p>
+	        </div>
+        </div>
+    </section>
+</div>
+</body></html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)./ -->
+<html class="pixel-ratio-1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>股票交易</title>
+    <meta name="description" content="MSUI: Build mobile apps with simple HTML, CSS, and JS components.">
+    <meta name="author" content="XXXX前端">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <script>
+    	var position="../../../";document.write(unescape("%3Cscript src='"+position+"indexTota.js?v="+Math.random()+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+	
+  </head>
+  <body>
+<!--资产负债查询-->
+<div class="page page-current" id="credit_query_creditAssetsQuery" data-refresh="true" data-pageTitle="资产负债查询" data-isCheckLogin="true" data-script='trade/scripts/credit/query/creditAssetsQuery.js'>
+	<header class="header">
+    	<div class="top_title">
+        	<a href="javascript:void(0);" class="icon_back text">查询</a>
+        	<h3>资产负债</h3>
+        </div>
+    </header>
+    <section class="main">
+         <div id="v_container_funds_jj" style="margin-top: 5px;">
+       		<div class="visc_wrapper" id="v_wrapper_funds_jj" data-iscrollPageId="mall_itemsJj">
+       			<div class="visc_scroller">
+       				<div class="visc_pullDown" style="display:none;">
+       					<span class="visc_pullDownIcon"></span>
+       					<div class="visc_pullDownDiv">
+       						<span class="visc_pullDownLabel">下拉刷新</span><br/>
+							时间更新于：<span class="visc_pullDownTime"></span>
+       					</div>
+       				</div>
+		            <div class="no_data" style="display:none;padding-top: 100px;">
+       					<span class="icon"></span>
+           				<p style="text-align:center;">暂无记录</p>
+      				</div>
+  
+			    	 <div class="toggle_nav toggle_nav_lit">
+			            <ul id="changeTitle">
+			                <li class="active"><a href="javascript:void(0);">资产</a></li>
+			                <li><a href="javascript:void(0);">负债</a></li>
+			                <li><a href="javascript:void(0);">额度</a></li>
+			            </ul>
+			        </div>
+			  		<div class="table_box">
+			            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="ce_table" id="zc">
+			              <tr>
+			                <th scope="row" width="35%">信用账户总资产</th>
+			                <td>--</td>
+			              </tr>
+			              <tr>
+			                <th scope="row">信用账户净资产</th>
+			                <td>--</td>
+			              </tr>
+			              <tr>
+			                <th scope="row">维持担保比例</th>
+			                <td>--</td>
+			              </tr>
+			              <tr>
+			                <th scope="row">证券市值</th>
+			                <td>--</td>
+			              </tr>
+			              <tr>
+			                <th scope="row">可用保证金</th>
+			                <td>--</td>
+			              </tr>
+			              <tr>
+			                <th scope="row">资金余额</th>
+			                <td>--</td>
+			              </tr>
+			               <tr>
+			                <th scope="row">资金可用</th>
+			                <td>--</td>
+			              </tr>
+			              <tr>
+			                <th scope="row">可提资产标准</th>
+			                <td>--</td>
+			              </tr>
+			              <tr>
+			                <th scope="row">可用于现金还款资金</th>
+			                <td>--</td>
+			              </tr>
+			              <tr>
+			                <th scope="row">现金可取</th>
+			                <td>--</td>
+			              </tr>
+			               <!--<tr>
+			                <th scope="row">融券卖出资金</th>
+			                <td>--</td>
+			              </tr>-->
+			            </table>
+			            
+			            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="ce_table" id="fz" style="display: none;">
+			              <tr>
+			                <th scope="row" width="35%">总负债</th>
+			                <td>--</td>
+			              </tr>
+			              <tr>
+			                <th scope="row">融资负债</th>
+			                <td>--</td>
+			              </tr>
+			              <tr>
+			                <th scope="row">融券负债</th>
+			                <td>--</td>
+			              </tr>
+			              <!--<tr>
+			                <th scope="row">融资本金</th>
+			                <td>--</td>
+			              </tr>
+			              <tr>
+			                <th scope="row">融资息费</th>
+			                <td>--</td>
+			              </tr>
+			              <tr>
+			                <th scope="row">应付融券市值</th>
+			                <td>--</td>
+			              </tr>
+			              <tr>
+			                <th scope="row">融券息费</th>
+			                <td>--</td>
+			              </tr>-->
+			              <tr>
+			                <th scope="row">融资合约盈亏</th>
+			                <td>--</td>
+			              </tr>
+			              <tr>
+			                <th scope="row">融券合约盈亏</th>
+			                <td>--</td>
+			              </tr>
+			              <tr>
+			                <th scope="row">融资合约利息</th>
+			                <td>--</td>
+			              </tr>
+			              <tr>
+			                <th scope="row">融券合约利息</th>
+			                <td>--</td>
+			              </tr>
+			              <tr>
+			                <th scope="row">融资合约利率</th>
+			                <td>--</td>
+			              </tr>
+			              <tr>
+			                <th scope="row">融券合约利率</th>
+			                <td>--</td>
+			              </tr>
+			            </table>
+			            
+			            
+			            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="ce_table" id="sy" style="display: none;">
+			              <tr>
+			                <th scope="row" width="35%">融资融券授信总额度</th>
+			                <td>--</td>
+			              </tr>
+			              <tr>
+			                <th scope="row">融资授信额度</th>
+			                <td>--</td>
+			              </tr>
+			              <tr>
+			                <th scope="row">融券授信额度</th>
+			                <td>--</td>
+			              </tr>
+			              <tr>
+			                <th scope="row">融资可用额度</th>
+			                <td>--</td>
+			              </tr>
+			              <tr>
+			                <th scope="row">融券可用额度</th>
+			                <td>--</td>
+			              </tr>
+			              <tr>
+			                <th scope="row">融资已用额度</th>
+			                <td>--</td>
+			              </tr>
+			              <tr>
+			                <th scope="row">融券已用额度</th>
+			                <td>--</td>
+			              </tr>
+			            </table>
+			        </div>
+       				<div class="visc_pullUp" style="display:none;">
+      					<span class="visc_pullUpIcon"></span>
+      					<div class="visc_pullUpDiv">
+						<span class="visc_pullUpLabel">上拉加载下一页</span><br/>
+						时间更新于：<span class="visc_pullUpTime"></span>
+					   </div>
+      				</div>
+      			</div>
+      		</div>
+       </div>
+     </section>
+</div>
+<!--资产负债查询-->
+</body></html>

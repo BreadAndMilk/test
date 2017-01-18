@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)./ -->
+<html class="pixel-ratio-1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>交易登录</title>
+    <meta name="description" content="MSUI: Build mobile apps with simple HTML, CSS, and JS components.">
+    <meta name="author" content="XXXX前端">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+	<script>
+    	var position="../../";document.write(unescape("%3Cscript src='"+position+"indexTota.js?v="+Math.random()+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+	
+  </head>
+  <body>
+<div class="page page-current" key-panel-main='true' id="banking_transfer"   data-pageTitle="银证转账" data-refresh="true" data-isCheckLogin="true" data-script='trade/scripts/banking/transfer.js'>
+	<header class="header">
+    	<div class="top_title">
+        	<a href="javascript:void(0);" class="icon_back text">交易</a>
+        	<div class="toggle_nav">
+            	<ul>
+                	<li class="active"><a href="javascript:void(0);">资金转入</a></li>
+                    <li><a href="javascript:void(0);">资金转出</a></li>
+            	</ul>
+            </div>
+            <a href="javascript:void(0);" class="noicon_text">流水</a>
+        </div>
+    </header>
+    <section class="main">
+        <div class="input_forms" id="transferIn">
+        	<div class="bank_form">
+	        	<h5>银行转证券：</h5>
+	            <div class="input_form">
+	                <div class="input_select">
+	                	<div class="select_box"><p>请选择...</p></div>
+	                </div>
+	            </div>
+	            <div class="input_form mt10">
+	            	<div class="input_text text">
+	                    <label>银行余额</label><input style="text-align: center;" type="text" class="t1" readonly=""/><a id="enblance" href="javascript:void(0);" class="btn">查询余额</a>
+	                </div>
+	                <div class="input_text text unit">
+	                    <label>转入金额</label><input js-key="number" id="moneyNum" type="number" custom_keybord="0" class="t1" placeholder="请输入转入金额" /><em>元</em>
+	                </div>
+	            </div>
+	            <div class="input_form mt10" style="border: 0">
+	            	<div class="input_text text" style="display: none;border-top: 1px solid #e5e5e5;border-bottom: 1px solid #e5e5e5;">
+	                    <label>银行密码</label><input js-key="password8" id="bank_password" type="password" class="t1" placeholder="请输入银行密码" />
+	                </div>
+	                <div class="input_text text" style="display: none;border-top: 1px solid #e5e5e5;border-bottom: 1px solid #e5e5e5;">
+	                    <label>资金密码</label><input js-key="password2" id="stock_password" type="password" class="t1" placeholder="请输入资金密码" />
+	                </div>
+	            </div>
+	            <div class="ce_btn">
+	            	<a href="javascript:void(0);">提交转账</a>
+	            </div>
+	        </div>
+        </div>
+        
+    	<div class="input_forms" style ="display:none" id="transferOut">
+    		<div class="bank_form">
+	        	<h5>证券转银行：</h5>
+	            <div class="input_form">
+	                <div class="input_select">
+	                	<div class="select_box"><p>请选择...</p></div>
+	                </div>
+	            </div>
+	            <div class="input_form mt10">
+	            	<div class="input_text text unit">
+	                    <label>可转金额</label><input type="text" class="t1 maxs" value="--" readonly="" /><em>元</em>
+	                </div>
+	                <div class="input_text text unit">
+	                    <label>转出金额</label><input js-key="number" id="moneyNum" type="number" custom_keybord="0" class="t1" placeholder="请输入转出金额" /><em>元</em>
+	                </div>
+	            </div>
+	            <div class="input_form mt10" style="border: 0">
+	            	<div class="input_text text" style="display: none;border-top: 1px solid #e5e5e5;border-bottom: 1px solid #e5e5e5;">
+	                    <label>银行密码</label><input js-key="password8" id="bank_password" type="password" class="t1" placeholder="请输入银行密码" />
+	                </div>
+	            	<div class="input_text text" style="display: none;border-top: 1px solid #e5e5e5;border-bottom: 1px solid #e5e5e5;">
+	                    <label>资金密码</label><input js-key="password2" id="stock_password" type="password" class="t1" placeholder="请输入资金密码" />
+	                </div>
+	            </div>
+	            <div class="ce_btn">
+	            	<a href="javascript:void(0);">提交转账</a>
+	            </div>
+	        </div>
+        </div>
+    </section>
+</div>
+</body></html>

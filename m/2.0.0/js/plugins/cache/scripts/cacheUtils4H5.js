@@ -1,0 +1,6 @@
+/*
+作者：   Alt+ 
+ 时间： 2016-07-06 15:41:29 PM 
+*/
++function(a){function b(b,c,d,e){var f={value:c,time:d,createDate:(new Date).getTime()},g=function(b){try{b=a.endecryptUtils.aesEncrypt("iloveyou",b)}catch(c){}return b};switch(e){case"h5_session":f=g(JSON.stringify(f)),window.sessionStorage.setItem(b,f);break;case"h5_local":f=g(JSON.stringify(f)),window.localStorage.setItem(b,f)}}function c(a,b){switch(b){case"h5_session":window.sessionStorage.removeItem(a);break;case"h5_local":window.localStorage.removeItem(a)}}function d(b,c){var d=function(b){if(null===b||"null"===b||""===b)return null;try{return JSON.parse(a.endecryptUtils.aesDecrypt("iloveyou",b))}catch(c){return{time:0,value:b}}},e=function(c){var d=null;return c&&(c.hasOwnProperty("time")&&c.hasOwnProperty("value")?d=c.value:a.alert("cacheUtils.getItem 取值失败，失败原因：存储时，未调用 cacheUtils.setItem 函数，当前 key："+b)),d},f=null;switch(c){case"h5_session":f=window.sessionStorage.getItem(b);break;case"h5_local":f=window.localStorage.getItem(b)}return f=d(f),f=e(f)}var e={setItem:b,removeItem:c,getItem:d};a.cacheUtils4H5=e}($);
+/*出品单位：深圳市思迪信息技术股份有限公司-前端Html5开发小组*/

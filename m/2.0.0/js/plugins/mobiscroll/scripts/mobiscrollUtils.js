@@ -1,0 +1,6 @@
+/*
+作者：   Alt+ 
+ 时间： 2016-07-06 15:41:29 PM 
+*/
+define("2.0.0/js/plugins/mobiscroll/scripts/mobiscrollUtils.js",function(require,exports,module){function a(a,b){var c={display:"modal",theme:"default",lang:"zh"};if(!b)throw new Error("options 配置参数不能为空");if(!b||!b.preset||"date"!==b.preset&&"datetime"!==b.preset&&"time"!==b.preset)throw new Error("options.preset 配置参数错误，请设置为date或者datetime或者time");b=$.extend(c,b),require.async("2.0.0/js/plugins/mobiscroll/scripts/mobiscroll.js",function(c){a.mobiscroll(b)})}function b(a,b){var c={display:"bottom",lang:"zh"};if(!b)throw new Error("options 配置参数不能为空");if(!b||!b.data||"[object Array]"!==Object.prototype.toString.call(b.data))throw new Error("options.data 配置参数错误");b=$.extend(c,b),b.preset="select",require.async("2.0.0/js/plugins/mobiscroll/scripts/mobiscroll.js",function(c){a.mobiscroll(b)})}var c="2.0.0/js/plugins/mobiscroll/css/mobiscroll.css";$.loadCss(c);var d={initDateUI:a,initSelectUI:b};module.exports=d});
+/*出品单位：深圳市思迪信息技术股份有限公司-前端Html5开发小组*/

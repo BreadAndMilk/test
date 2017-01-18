@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)./ -->
+<html class="pixel-ratio-1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>股票交易</title>
+    <meta name="description" content="MSUI: Build mobile apps with simple HTML, CSS, and JS components.">
+    <meta name="author" content="XXXX前端">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <script>
+    	var position="../../../";document.write(unescape("%3Cscript src='"+position+"indexTota.js?v="+Math.random()+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+	
+  </head>
+  <body>
+<div class="page page-current" key-panel-main='true' id="credit_order_cashPayments" data-pageTitle="现金还款" data-refresh="true" data-isCheckLogin="true" data-script='trade/scripts/credit/order/cashPayments.js'>
+	<header class="header">
+    	<div class="top_title">
+        	<a href="javascript:void(0);" class="icon_back text">下单</a>
+        	<h3>现金还款</h3>
+            <a href="javascript:void(0);" class="noicon_text icon_search"></a>
+        </div>
+    </header>
+    <section class="main">
+        <!--<div class="toggle_nav toggle_nav_lit">
+            <ul>
+                <li class="active"><a href="javascript:void(0);">直接还款</a></li>
+                <li><a href="javascript:void(0);">指定合约</a></li>
+            </ul>
+        </div>-->
+        <div class="rule_select" style="display: none;">
+        	<p>选择合约<span>请选择</span></p>
+        </div>
+		<div class="back_form">
+			<div class="value_box">
+            	<ul>
+                	<li><span>可用资金</span><p><samp id="enableMoney">--</samp><em>元</em></p></li>
+                    <li><span>需还金额</span><p><samp id="mayPay">--</samp><em>元</em></p></li>
+            	</ul>
+            </div>
+            <div class="input_form mt10">
+            	<div class="input_text text">
+            		<label>还款金额</label><input js-key="number" id="payMoney" type="number" class="t1 width75"/>
+            		<a style="width: 18%;white-space: nowrap;" href="javascript:void(0);" class="btn">全 额</a>
+            	</div>
+        	</div>
+            <div class="ce_btn mt20">
+            	<a href="javascript:void(0);">提交委托</a>
+            </div>
+        </div>
+    </section>
+</div>
+</body></html>
