@@ -9,6 +9,7 @@ define(function(require, exports, module) {
 		 * 默认为：0
 		 */
 		"platform": 0,
+		
 		/**
 		 * hSea根路径，项目中的文件uri最终会在项目访问的web路径后添加
 		 */
