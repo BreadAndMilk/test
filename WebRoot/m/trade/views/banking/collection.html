@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)./ -->
+<html class="pixel-ratio-1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>交易登录</title>
+    <meta name="description" content="MSUI: Build mobile apps with simple HTML, CSS, and JS components.">
+    <meta name="author" content="XXXX前端">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+    	var position="../../";document.write(unescape("%3Cscript src='"+position+"indexTota.js?v="+Math.random()+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+	
+
+  </head>
+  <body>
+<div class="page page-current" key-panel-main='true' id="banking_collection" data-pageTitle="资金归集" data-refresh="true" data-isCheckLogin="true" data-script='trade/scripts/banking/collection.js'>
+	<header class="header">
+    	<div class="top_title">
+        	<a href="javascript:void(0);" class="icon_back text">交易</a>
+        	<div class="toggle_nav">
+            	<ul>
+                	<li class="active"><a href="javascript:void(0);">一键归集</a></li>
+                    <li><a href="javascript:void(0);">资金转账</a></li>
+            	</ul>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+    	<div class="inte_form">
+        	<h5>归集账号：</h5>
+        	<div class="input_form">
+                <div class="input_select">
+                	<div class="select_box" id="collection"><p><i class="icon"></i>请选择...</p></div>
+                </div>
+            </div>
+            <div class="input_form mt10">
+                <div class="input_text text">
+                    <label>资金密码</label><input js-key="password2" id="stock_password" type="password" class="t1" />
+                </div>
+            </div>
+            <div class="ce_btn">
+            	<a href="javascript:void(0);">一键归集</a>
+            </div>
+		</div>
+		<div class="inte_form" style="display: none;">
+        	<h5>转出账号：</h5>
+        	<div class="input_form">
+                <div class="input_select">
+                	<div class="select_box" id="rollOut"><p><i class="icon"></i>请选择...</p></div>
+                </div>
+            </div>
+            <h5>转入账号：</h5>
+            <div class="input_form">
+                <div class="input_select">
+                	<div class="select_box" id="shiftTo"><p><i class="icon"></i>请选择...</p></div>
+                </div>
+            </div>
+            <div class="input_form mt10">
+                <div class="input_text text unit">
+                    <label>转账金额</label><input js-key="number" id="moneyNum" type="number" class="t1" /><em>元</em>
+                </div>
+            </div>
+            <div class="input_form mt10">
+                <div class="input_text text">
+                    <label>资金密码</label><input js-key="password2" id="stock_password" type="password" class="t1" />
+                </div>
+            </div>
+            <div class="ce_btn">
+            	<a href="javascript:void(0);">提交转账</a>
+            </div>
+		</div>
+        <div class="inte_table">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <th scope="col">银行名称</th>
+                <th scope="col">账户类型</th>
+                <th scope="col">资金余额</th>
+                <th scope="col">可转资金</th>
+              </tr>
+            </table>
+        </div>
+    </section>
+</div>
+</body></html>

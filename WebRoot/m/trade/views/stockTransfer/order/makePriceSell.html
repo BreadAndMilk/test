@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="pixel-ratio-1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>股份转让</title>
+    <meta name="description" content="MSUI: Build mobile apps with simple HTML, CSS, and JS components.">
+    <meta name="author" content="XXXX前端">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+    	var position="../../../";document.write(unescape("%3Cscript src='"+position+"indexTota.js?v="+Math.random()+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+	
+
+  </head>
+  <body>
+<div class="page page-current" id="stockTransfer_order_makePriceSell"   data-pageTitle="股份转让" data-refresh="true" data-isCheckLogin="true" data-script='trade/scripts/stockTransfer/order/makePriceSell.js'>
+	<header class="header">
+    	<div class="top_title">
+        	<a href="javascript:void(0);" class="icon_back"></a>
+        	<h3>定价卖出</h3>
+        </div>
+    </header>
+    <section class="main">
+		<div class="trade_main clearfix">
+        	<div class="trade_form">
+            	<div class="input_box input_code">
+                    <div class="input_text select_box deleteBefore">
+                    	<input type="text" js-key="shares" class="t1" id="stockCode" maxLength="6" placeholder="证券代码"><span id="stockName"></span>
+                    	<div id="stock_list"></div>
+                    </div>
+                </div>
+                <div class="input_box input_value mt20">
+                	<input type="number" js-key="number" class="t1" id="stockPrice" maxLength="8" custom_keybord="0" placeholder="输入价格">
+                    <em class="less"></em><em class="add"></em>
+                </div>
+                <div class="input_box input_num mt20">
+                	<div class="input_text">
+                		<input type="tel" js-key="tel"  class="t1" id="stockNum" maxLength="9" placeholder="输入数量">
+                    </div>
+                </div>
+                <p class="limit">可卖 <strong>--</strong> <em>股</em></p>
+                <div class="ce_btn mt20">
+                	<a href="javascript:void(0);" id="submitOrder">卖出<span id="total"></span></a>
+                </div>
+            </div>
+        	<div class="five_box">
+            	<ul>
+                	<li><em>--</em>卖5<span class="ared">--</span></li>
+                    <li><em>--</em>卖4<span class="ared">--</span></li>
+                    <li><em>--</em>卖3<span class="ared">--</span></li>
+                    <li><em>--</em>卖2<span class="ared">--</span></li>
+                    <li><em>--</em>卖1<span class="ared">--</span></li>
+            	</ul>
+                <hr />
+                <ul>
+                	<li><em>--</em>买1<span class="agreen">--</span></li>
+                    <li class=""><em>--</em>买2<span class="agreen">--</span></li>
+                    <li><em>--</em>买3<span class="agreen">--</span></li>
+                    <li><em>--</em>买4<span class="agreen">--</span></li>
+                    <li><em>--</em>买5<span class="agreen">--</span></li>
+            	</ul>
+            </div>
+        </div>
+        <!--trade_main-->
+        <div class="fund_table mt10" style="overflow-y:auto;">
+           	<div class='ce_table position_div'></div>
+            <div class="no_data" style="display:none;">
+		        <span class="icon"></span>
+			    <p style="text-align:center;">暂无持仓记录</p>
+	        </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
+

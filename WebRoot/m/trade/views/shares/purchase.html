@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)./ -->
+<html class="pixel-ratio-1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>当日资金流水</title>
+    <meta name="description" content="MSUI: Build mobile apps with simple HTML, CSS, and JS components.">
+    <meta name="author" content="XXXX前端">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+    	var position="../../";document.write(unescape("%3Cscript src='"+position+"indexTota.js?v="+Math.random()+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+	
+  </head>
+  <body>
+<div class="page page-current" id="shares_purchase" data-pageTitle="新股申购"   data-refresh="true" data-isCheckLogin="true" data-script='trade/scripts/shares/purchase.js'>
+	<header class="header">
+    	<div class="top_title">
+        	<a href="javascript:void(0);" class="icon_back text">交易</a>
+        	<h3>新股申购</h3>
+        </div>
+    </header>
+    <section class="main">
+    	<div class="tab_nav">
+        	<ul>
+            	<li class="active"><a href="javascript:void(0);" to-page="shares_purchase">申购</a></li>
+                <li><a href="javascript:void(0);" to-page="shares_distribution">配号</a></li>
+                <li><a href="javascript:void(0);" to-page="shares_success">中签</a></li>
+                <li><a href="javascript:void(0);" to-page="shares_more">更多</a></li> 
+        	</ul>
+        </div>
+    	<div class="order_form">
+        	<h5>可申购额度</h5>
+            <div class="max_box">
+            	<ul>
+                	<li><span>沪市</span><p style="font-size: inherit;"><strong>--</strong> 股</p></li>
+                	<li><span>深市</span><p style="font-size: inherit;"><strong>--</strong> 股</p></li>
+            	</ul>
+            </div>
+			<div class="input_form mt10">
+				<div class="input_text text">
+					<label>申购代码</label><input id="stockCode" type="text" class="t1" placeholder="请选择下方新股"/>
+				</div>
+				<div class="input_text text unit">
+					<label>申购价格</label><input id="stockPrice" type="number" class="t1" readonly="readonly"/><em>元</em>
+				</div>
+            </div>
+            <div class="input_form mt10">
+				<div class="input_text text unit">
+					<label>申购数量</label><input id="stockUnit" type="tel" class="t1"/><em>股</em>
+				</div>
+			</div>
+            <p style="display: none;" class="notice">当前可最多申购 <span>--</span> 股</p>
+            <div class="ce_btn mt10">
+            	<a href="javascript:void(0);">申购</a>
+            </div>
+        </div>
+        <!--order_form end-->
+        <div class="fund_table mt10">
+        	<div class='ce_table position_div'></div>
+        	<div class="no_data" style="display:none;">
+		        <span class="icon"></span>
+			    <p style="text-align:center;">暂无今日新股记录</p>
+	        </div>
+        </div>
+    </section>
+</div>
+
+</body></html>

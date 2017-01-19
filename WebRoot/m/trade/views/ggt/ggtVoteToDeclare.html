@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)./ -->
+<html class="pixel-ratio-1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>股票交易</title>
+    <meta name="description" content="MSUI: Build mobile apps with simple HTML, CSS, and JS components.">
+    <meta name="author" content="XXXX前端">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <script>
+    	var position="../../";document.write(unescape("%3Cscript src='"+position+"indexTota.js?v="+Math.random()+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+	
+  </head>
+  <body>
+  	
+ <div class="page page-current" id="ggt_ggtVoteToDeclare" data-pageTitle="投票申报"   data-refresh="true" data-isCheckLogin="true" data-script='trade/scripts/ggt/ggtVoteToDeclare.js'>
+	<header class="header">
+    	<div class="top_title">
+        	<a href="#" class="icon_back"></a>
+        	<h3>投票申报</h3>
+			<a href="javascript:void(0);" class="noicon_text" style="display:none">查询</a>
+        </div>
+    </header>
+    <section class="main">
+		<div class="vertical_list" style="display: none">
+			<div class="fund_list2"></div>
+			<div class="no_data" style="display:none;padding-top: 100px;">
+				<span class="icon"></span>
+				<p style="text-align:center;">暂无记录</p>
+			</div>
+		</div>
+
+		<div class="fund_form2 mt10" style="display: none">
+			<div class="input_form " style="background: #efeff4;padding-left: 0;">
+        	<ul>
+            	<li>
+            		<div class="input_text text" style="border-bottom: 1px solid #dddddd;">
+						<label>公司代码</label>
+						<div class="input_select select_box deleteBefore" style="border-bottom: 1px solid #dddddd;">
+                    		<input type="tel" class="t1" js-key="shares" id="companyCode" maxLength="5" readonly required/>
+                    	</div>
+					</div>
+            	</li>
+                <li>
+                	<div class="input_text text" style="border-bottom: 1px solid #dddddd;">
+						<label>公司名称</label><input type="text" class="t1" readonly="readonly" id="companyName"/>
+					</div>
+                </li>
+        	</ul>
+            <ul>
+            	<li><div class="input_text text mt10" style="border-bottom: 1px solid #dddddd;">
+					<label>投票代码</label><input type="text" class="t1" id="vote_code"/>
+				</div></li>
+                <li><div class="input_text text" style="border-bottom: 1px solid #dddddd;">
+					<label>议案编号</label><input type="text" class="t1" id="bill_code"/>
+				</div></li>
+        	</ul>
+            <ul>
+            	<li><div class="input_text text mt10" style="border-bottom: 1px solid #dddddd;">
+					<label>赞成数量</label><input type="number" class="t1" id="approveAmount"/>
+				</div></li>
+                <li><div class="input_text text" style="border-bottom: 1px solid #dddddd;">
+					<label>反对数量</label><input type="number" class="t1" id="opposeAmount"/>
+				</div></li>
+                <li><div class="input_text text" style="border-bottom: 1px solid #dddddd;">
+					<label>弃权数量</label><input type="number" class="t1" id="waiveAmount"/>
+				</div></li>
+        	</ul>
+           </div> 
+           <div class="ce_btn">
+            	<a href="#" id="submitOrder">提 交</a>
+            </div>
+        </div>
+    </section>
+</div>
+  	
+  	
+</body></html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)./ -->
+<html class="pixel-ratio-1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>股票交易</title>
+    <meta name="description" content="MSUI: Build mobile apps with simple HTML, CSS, and JS components.">
+    <meta name="author" content="XXXX前端">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <script>
+    	var position="../../../";document.write(unescape("%3Cscript src='"+position+"indexTota.js?v="+Math.random()+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+	
+  </head>
+  <body>
+<div class="page page-current" key-panel-main='true'  id="credit_order_bondAlsoCoupons"   data-pageTitle="现券还券" data-refresh="true" data-isCheckLogin="true" data-script='trade/scripts/credit/order/bondAlsoCoupons.js'>
+	<header class="header">
+    	<div class="top_title"> 
+        	<a href="javascript:void(0);" class="icon_back text">下单</a>
+        	<h3>现券还券</h3>
+            <a href="javascript:void(0);" class="noicon_text icon_search"></a>
+        </div>
+    </header>
+    <section class="main">
+    	<!--<div class="toggle_nav toggle_nav_lit">
+            <ul>
+                <li class="active"><a href="javascript:void(0);">直接还券</a></li>
+                <li><a href="javascript:void(0);">指定合约</a></li>
+            </ul>
+        </div>-->
+		<div class="back_form">
+			<div class="input_form">
+				<div class="input_select text position">
+					<label>证券代码</label><div class="select_box"><p>请选择</p></div>
+				</div>
+				<div class="input_select text contract" style="display: none;">
+					<label>选择合约</label><div class="select_box"><p>请选择</p></div>
+				</div>
+            </div>
+            <div class="input_form mt10">
+				<div class="input_text text">
+					<label>需还数量</label><input id="needPay" type="text" class="t1" readonly/>
+				</div>
+				<div class="input_text text btn">
+					<label>最大可还</label><input id="canPay" type="text" class="t1" readonly /><a href="javascript:void(0);" class="btn">全部</a>
+				</div>
+			</div>
+			 <div class="input_range mt10">
+            	<label>委托数量</label>
+            	<div class="input_value">
+                	<input id="stockNum" type="number" class="t1" />
+                </div>
+            
+            </div>
+            <div class="ce_btn mt20">
+            	<a href="javascript:void(0);">提交委托</a>
+            </div>
+        </div>
+    </section>
+</div>
+</body></html>

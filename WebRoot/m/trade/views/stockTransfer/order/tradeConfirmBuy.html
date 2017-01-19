@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="pixel-ratio-1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>股份转让</title>
+    <meta name="description" content="MSUI: Build mobile apps with simple HTML, CSS, and JS components.">
+    <meta name="author" content="XXXX前端">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+    	var position="../../../";document.write(unescape("%3Cscript src='"+position+"indexTota.js?v="+Math.random()+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+	
+
+  </head>
+<body>
+<div class="page page-current" id="stockTransfer_order_tradeConfirmBuy"   data-pageTitle="股份转让" data-refresh="true" data-isCheckLogin="true" data-script='trade/scripts/stockTransfer/order/tradeConfirmBuy.js'>
+	<header class="header">
+    	<div class="top_title">
+        	<a href="javascript:void(0);" class="icon_back"></a>
+        	<h3>成交确认买入</h3>
+        </div>
+    </header>
+    <section class="main">
+    	<div class="tnb_form in">
+        	<div class="input_form">
+                <div class="input_text text">
+                    <label>证券代码</label><strong><em id="stockName"></em><small id="stockCode"></small></strong>
+                </div>
+            	<div class="input_text text">
+                    <label>委托价格</label>
+                    <div class="input_value">
+                        <input type="number" js-key="number" class="t1" id="stockPrice" maxLength="8" custom_keybord="0" placeholder="输入价格"/>
+                        <em class="less"></em><em class="add"></em>
+                    </div>
+                </div>
+                <div class="input_text text">
+                    <label>委托数量</label>
+                    <div class="input_value">
+                        <input type="tel" js-key="tel"  class="t1" id="stockNum" maxLength="9" placeholder="输入数量"/>
+                    </div>
+                </div>
+                <p class="limit">可买<strong>--</strong> <em>股</em></p>
+                <div class="input_text text">
+                    <label>约定号码</label><input type="text" class="t1" readonly="readonly">
+                </div>
+            </div>
+            <div class="ce_btn">
+                <a href="javascript:void(0);" id="submitOrder">买  入</a>
+            </div>
+        </div>
+        
+        <div class="fund_table mt10" style="overflow-y:auto;">
+           	<div class='ce_table position_div'></div>
+            <div class="no_data" style="display:none;">
+		        <span class="icon"></span>
+			    <p style="text-align:center;">暂无持仓记录</p>
+	        </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>

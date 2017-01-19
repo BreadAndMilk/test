@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="pixel-ratio-1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>个股期权</title>
+    <meta name="description" content="MSUI: Build mobile apps with simple HTML, CSS, and JS components.">
+    <meta name="author" content="XXXX前端">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+    	var position="../../../";document.write(unescape("%3Cscript src='"+position+"indexTota.js?v="+Math.random()+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+	
+
+  </head>
+  <body>
+  	<div class="page page-current" id="option_position_holdingsQuery"   data-pageTitle="资产持仓" data-refresh="true" data-isCheckLogin="true" data-script='trade/scripts/option/position/holdingsQuery.js'>
+	<header class="header">
+    	<div class="top_title">
+        	<a href="javascript:void(0);" class="icon_back text">交易</a>
+        	<h3>个股期权</h3>
+        	<!--<a href="javascript:void(0);" class="logout" style="position: absolute;height: 0.44rem;line-height: 0.44rem;right: 0;top: 0;color: #FFFFFF;font-size: 0.14rem;padding: 0 0.1rem;text-decoration: none;">退出</a>-->
+        </div>
+    </header>
+    <section class="main">
+    	<div class="tab_nav">
+        	<ul>
+                <li class="active"><a href="javascript:void(0);" to-page="option_position_holdingsQuery">持仓</a></li>
+                <li><a href="javascript:void(0);" to-page="option_order_homePage">下单</a></li>
+                <li><a href="javascript:void(0);" to-page="option_query_mainQuery">查询</a></li>
+        	</ul>
+        </div>
+    	<div class="iscroll_vWrapper" id="wrapper" style="position: relative;">
+	        <div class="iscroll_vScroller">
+	            <div class="iscroll_pullDown scrolledUp" style="display: none;">
+	               <span class="pullDownIcon"></span>
+	               <div class="pullDownLabel">下拉刷新</div>
+	            </div>
+	            <div class="vertical_list" data-is-content="true">
+	            	
+	            	<div class="stock_opt_value mt10">
+			        	<div class="inner">
+			                <a href="javascript:void(0);" class="trade" id="transfer" >银证转账</a>
+			                <p>总资产（RMB元） </p>
+			                <strong>--</strong>
+			            </div>
+			            <ul>
+			            	<li><span>占用保证金</span><p>--</p></li>
+			                <li><span>总盈亏</span><p>--</p></li>
+			                <li><span>可用资金</span><p>--</p></li>
+			                <li><span>总市值</span><p>--</p></li>
+			        	</ul>
+			        </div>
+			        <div class="stock_opt_list">
+			        	
+			        </div>
+	            	
+	            	<div class="no_data" style="display:none;padding-top: 50px;">
+   						<span class="icon"></span>
+       					<p style="text-align:center;">暂无持仓记录</p>
+     			    </div>
+     			    
+     			</div>    
+    		    <div class="iscroll_pullUp" style="display: none;">
+	               	<span class="pullUpIcon"></span>
+	               	<div class="pullUpLabel">上拉加载下一页</div>
+	            </div>
+	        </div>
+       	</div>
+    </section>
+</div>
+</body></html>

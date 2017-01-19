@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)./ -->
+<html class="pixel-ratio-1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>股票交易</title>
+    <meta name="description" content="MSUI: Build mobile apps with simple HTML, CSS, and JS components.">
+    <meta name="author" content="XXXX前端">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <script>
+    	var position="../../";document.write(unescape("%3Cscript src='"+position+"indexTota.js?v="+Math.random()+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+	
+  </head>
+  <body>
+  	
+  	<div class="page page-current" id="ggt_ggtCompanyHdDeclare" data-pageTitle="投票申报"   data-refresh="true" data-isCheckLogin="true" data-script='trade/scripts/ggt/ggtCompanyHdDeclare.js'>
+	<header class="header">
+    	<div class="top_title">
+        	<a href="#" class="icon_back"></a>
+        	<h3>公司行为申报</h3>
+        </div>
+    </header>
+    <section class="main">
+
+		<div class="fund_form2 mt10">
+			<div class="input_form " style="background: #efeff4;padding-left: 0;";>
+        	<ul>
+            	<li>
+            		<div class="input_text text" style="border-bottom: 1px solid #dddddd;">
+						<label>证券代码</label>
+						<div class="input_select select_box deleteBefore" style="border-bottom: 1px solid #dddddd;">
+                    		<input type="tel" class="t1" js-key="shares" id="stockCode" maxLength="5" value="" placeholder="证券代码" >
+                    		<div id="stock_list" class="stock_list"></div>
+                    	</div>
+					</div>
+            	</li>
+                <li>
+                	<div class="input_text text" style="border-bottom: 1px solid #dddddd;">
+						<label>证券名称</label><input type="text" class="t1" readonly="readonly" id="stockName"/>
+					</div>
+				</li>
+        	</ul>
+            <ul>
+            	<li>
+            		<div class="input_text text mt10" style="border-bottom: 1px solid #dddddd;"><label>业务类型</label>
+            			<div class="input_select select_business" style="border-bottom: 1px solid #dddddd;">
+							<div class="select_box"><p>请选择...</p></div>
+						</div>
+					</div>
+            	</li>
+                <li>
+                	<div class="input_text text" style="border-bottom: 1px solid #dddddd;"><label>申报类型</label>
+						<div class="input_select select_reportType" style="border-bottom: 1px solid #dddddd;">
+							<div class="select_box"><p>请选择...</p></div>
+						</div>
+					</div>
+                </li>
+                <li>
+                	<div class="input_text text mt10" style="border-bottom: 1px solid #dddddd;">
+						<label>行为代码</label><input type="text" class="t1" id="hdCode"/>
+					</div>
+                </li>
+                <li>
+                	<div class="input_text text" style="border-bottom: 1px solid #dddddd;">
+						<label>委托数量</label><input type="text" class="t1" id="entrustAmount"/>
+					</div>
+                </li>
+        	</ul>
+            <div class="ce_btn">
+            	<a href="#" id="submitOrder">提 交</a>
+            </div>
+           </div>
+        </div>
+    </section>
+</div>
+</body></html>

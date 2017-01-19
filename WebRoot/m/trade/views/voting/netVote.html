@@ -1,0 +1,31 @@
+<div class="page" id="voting_netVote" data-pageTitle="网络投票" data-refresh="true"   data-isCheckLogin="true">
+	<header class="header">
+    	<div class="top_title">
+        	<a href="javascript:void(0);" class="icon_back text">交易</a>
+        	<h3>网络投票</h3>
+        </div>
+	 </header>
+	 <section class="main">
+    	<div class="vote_form">
+            <div class="input_text select_box text" style="height:0.39rem">
+                    <label>股票名称</label>
+                	<input type="tel" class="t1" id="stockCode" maxLength="6" value="" placeholder="请输入投票证券代码" style="width:60%"><strong id="stockName" style="color:#999999"></strong>
+                	<div id="stock_list"></div>
+            </div>
+            
+        	<div class="input_text text">
+                <label>议案序号</label><input type="number" class="t1" id="motionNum" placeholder="请输入议案序号" />
+            </div>
+            <p>1.00表示第1项议案，2.00表示第2项议案，依此类推，仅供参考，具体序号请查询上市公司公告</p>
+            <div class="input_text text">
+                <label>委托数量</label><input type="tel" class="t1" id="delegateQuantity" placeholder="请输入委托数量" />
+            </div>
+            <p>1——赞成、2——反对、3——弃权 <br />（需使用累积投票制表决的议案，在该项填写所投的选举票数）</p>
+            <div class="ce_btn">
+            	<a href="javascript:void(0)">提 交</a>
+            </div>
+        </div>
+    </section>
+	 
+
+</div>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)./ -->
+<html class="pixel-ratio-1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>交易首页</title>
+    <meta name="description" content="MSUI: Build mobile apps with simple HTML, CSS, and JS components.">
+    <meta name="author" content="XXXX前端">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+    	var position="../../";document.write(unescape("%3Cscript src='"+position+"indexTota.js?v="+Math.random()+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+	
+  </head>
+  <body>
+	<div class="page page-current" id="account_index" data-pageTitle="交易首页" data-refresh="true" data-script='trade/scripts/account/index.js'>
+	<header class="header">
+    	<div class="top_title">
+            <div class="user_box">
+            	<span>请登录</span>
+            	<a style="display:none;" class="logout" href="javascript:void(0);">注销</a>
+            </div>
+        	<h3></h3>
+        </div>
+    </header>
+    <section class="main">
+        <div class="home_value">
+            <div class="inner">
+            	<p>总资产（元）</p>
+                <strong>--</strong>
+            </div>
+        	<div class="value_box">
+            	<ul>
+                	<li><span>参考市值（元）</span><p>--</p></li>
+                    <li><span>参考盈亏（元）</span><p>--</p></li>
+            	</ul>
+            </div>
+        </div>
+        <div class="home_nav">
+        	<ul>
+            	<li><a href="javascript:void(0);" to-page="stock_stockBuy" param="" type="0"><i></i><p>买入</p></a></li>
+                <li><a href="javascript:void(0);" to-page="stock_stockSell" param="" type="0"><i></i><p>卖出</p></a></li>
+                <li><a href="javascript:void(0);" to-page="stock_stockCancel" param="" type="0"><i></i><p>撤单</p></a></li>
+                <li><a href="javascript:void(0);" to-page="stock_stockQuery" param="" type="0"><i></i><p>查询</p></a></li>
+        	</ul>
+        </div>
+        
+        <div class="iscroll_vWrapper" id="wrapper" style="position: relative;">
+        	<div class="iscroll_vScroller">
+            	<div class="vertical_list" data-is-content="true">
+            		
+			<div class="home_nav2 mt10">
+	        	<ul>
+	            	<li><a href="javascript:void(0);" to-page="stock_stockHolding" param="" type="0"><span><i class="n1"></i>我的持仓</span></a></li>
+	                <li><a href="javascript:void(0);" to-page="stock_stockQueryToday" param="entrust" type="0"><span><i class="n2"></i>当日委托</span></a></li>
+	                <li><a href="javascript:void(0);" to-page="stock_stockQueryToday" param="deal" type="0"><span><i class="n3"></i>当日成交</span></a></li>
+	        	</ul>
+	            <ul>
+	            	<!--<li id="newShare"><a href="javascript:void(0);" to-page="shares_purchase" param="" type="0|1"><span><i class="n4"></i>新股申购</span></a></li>-->
+	                <li id="credit"><a href="javascript:void(0);" to-page="credit_asset_asset" param="" type="1"><span><i class="n5"></i>融资融券</span></a></li>
+	                <li id="StockTranfer"><a href="javascript:void(0);" to-page="stockTransfer_asset_holding" param="" type="0"><span><i class="n5"></i>新三板</span></a></li>
+	                <li id="option"><a href="javascript:void(0);" to-page="option_position_holdingsQuery" param="" type="2"><span><i class="n5"></i>个股期权</span></a></li>
+	                <li id="ggt"><a href="javascript:void(0);" to-page="ggt_ggtHolding" param="" type="0"><span><i class="n6"></i>港股通</span></a></li>
+	                <li id="fund"><a href="javascript:void(0);" to-page="fund_grading_position" param="" type="0"><span><i class="n7"></i>分级基金</span></a></li>
+	                <li id="fund"><a href="javascript:void(0);" to-page="fund_outside_position" param="" type="0"><span><i class="n7"></i>场外基金</span></a></li>
+	                <li id="fund"><a href="javascript:void(0);" to-page="fund_floor_home" param="" type="0"><span><i class="n7"></i>场内基金</span></a></li>
+	                <li id="collection"><a href="javascript:void(0);" to-page="banking_collection" param="" type="0|1"><span><i class="n8"></i>资金归集</span></a></li>
+	        	</ul>
+	            <ul>
+	            	<li id="banking"><a href="javascript:void(0);" to-page="banking_transfer" param="" type="0|1"><span><i class="n9"></i>银证转账</span></a></li>
+	            </ul>
+	            <ul>
+	                <li id="changeTradePwd"><a href="javascript:void(0);" to-page="account_changePassword" param="" type="0|1"><span><i class="n10"></i>修改密码</span></a></li>
+	                <!--<li><a href="javascript:void(0);"><span><i class="n11"></i>网络投票</span></a></li>
+	            	<li><a href="javascript:void(0);"><span><i class="n12"></i>预受要约</span></a></li>-->
+	        	</ul>
+	        	<p id="version" style="text-align:center; color: #A6A6A6;"></p>
+    		</div>
+	    		</div>
+        	</div>
+       	</div>
+    </section>
+	<footer class="footer">
+    	<div class="ft_nav">
+        	<ul>
+            	<li><a href="javascript:void(0);">行情</a></li>
+                <li><a href="javascript:void(0);">自选</a></li>
+                <li class="active"><a href="javascript:void(0);">交易</a></li>
+                <li><a href="javascript:void(0);">资讯</a></li>
+                <li><a href="javascript:void(0);">我自选</a></li>
+        	</ul>
+        </div>
+    </footer>
+    <div class="backdrop" style="display:none;"></div>
+    <div class="pop_box pop" style="top:30%;display:none;">
+		<div class="pop_header">
+    		<h3 class="ared">操作账号选择</h3>
+    	</div>
+		<div class="pop_main" to-page="">
+		    <h4>您已登录多个账户，请选择一个账户进行<span class="ared"></span></h4>
+			<dl class="test_box">
+	    	</dl>
+    	</div>
+    	<div class="pop_footer">
+    		<div class="pop_btn">
+    			<a href="javascript:void(0);" id="sureBtn">确认</a>
+        	</div>
+   	   </div>
+    </div>
+    <div class="pop_box pop1" style="top:30%;display:none;">
+		<div class="pop_header">
+    		<h3 class="ared">退出操作账号选择</h3>
+    	</div>
+		<div class="pop_main" to-page="">
+		    <h4>您已登录多个账户，请选择需要退出的账户<span class="ared"></span></h4>
+			<dl class="test_box">
+	    	</dl>
+    	</div>
+    	<div class="pop_footer">
+    		<div class="pop_btn">
+    			<a style="width: 50%;float: right;" href="javascript:void(0);" id="sureBtn">确认</a>
+    			<a style="width: 50%;margin-left: -1;border-right: 1px solid #CBCBCB;" href="javascript:void(0);" id="cancel">取消</a>
+        	</div>
+   	   </div>
+	</div>
+</div>
+</body></html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)./ -->
+<html class="pixel-ratio-1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>交易持仓</title>
+    <meta name="description" content="MSUI: Build mobile apps with simple HTML, CSS, and JS components.">
+    <meta name="author" content="XXXX前端">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+    	var position="../../";document.write(unescape("%3Cscript src='"+position+"indexTota.js?v="+Math.random()+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+	
+
+  </head>
+  <body>
+  	<div class="page page-current" id="stock_stockHolding"   data-pageTitle="交易持仓" data-refresh="true" data-isCheckLogin="true" data-script='trade/scripts/stock/stockHolding.js'>
+	<header class="header">
+    	<div class="top_title">
+        	<a href="javascript:void(0);" class="icon_back text">交易</a>
+        	<h3>交易持仓</h3>
+        </div>
+    </header>
+    <section class="main">
+    	<div class="tab_nav">
+        	<ul>
+            	<li><a href="javascript:void(0);" to-page="stock_stockBuy">买入</a></li>
+                <li><a href="javascript:void(0);" to-page="stock_stockSell">卖出</a></li>
+                <li><a href="javascript:void(0);" to-page="stock_stockCancel">撤单</a></li>
+                <li class="active"><a href="javascript:void(0);" to-page="stock_stockHolding">持仓</a></li>
+                <li><a href="javascript:void(0);" to-page="stock_stockQuery">查询</a></li>
+        	</ul>
+        </div>
+        
+        <div class="iscroll_vWrapper" id="wrapper" style="position: relative;">
+	        <div class="iscroll_vScroller">
+	            <div class="iscroll_pullDown scrolledUp" style="display: none;">
+	               <span class="pullDownIcon"></span>
+	               <div class="pullDownLabel">下拉刷新</div>
+	            </div>
+	            
+	            <div class="vertical_list" data-is-content="true">
+					<div class="hold_main2 mt10">
+					       	<div class="iscroll_hWrapper" id="hwrapper">
+	    						<div class="iscroll_hScroller" id="hscroller">
+	    							
+									<div id="RMB">
+						               <div class="inner">
+							            	<div class="dot"><em class="current"></em><em></em><em></em></div>
+							            	<p>总资产<span>（人民币）</span></p>
+							                <strong>--<em></em></strong>
+							                <a href="javascript:void(0);" class="trade rmb" id="transfer">银证转账</a>
+							            </div>
+							            <div class="more_info">
+							            	<ul>
+							                	<li><p>可用资金</p><strong>--<em></em></strong></li>
+							                    <li><p>参考盈亏</p><strong class="">--<em></em></strong></li>
+							                    <li><p>可取资金</p><strong>--<em></em></strong></li>
+							                    <li><p>参考市值</p><strong class="">--<em></em></strong></li>
+							            	</ul>
+							            </div>
+									</div>
+									
+								    <div id="HKD">
+					       		       <div class="inner">
+							            	<div class="dot"><em></em><em class="current"></em><em></em></div>
+							            	<p>总资产<span>（港币）</span></p>
+							                <strong>--<em></em></strong>
+							                <a href="javascript:void(0);" class="trade gb" id="transfer">银证转账</a>
+							            </div>
+							            <div class="more_info">
+							            	<ul>
+							                	<li><p>可用资金</p><strong>--<em></em></strong></li>
+							                	<li><p>参考盈亏</p><strong class="">--<em></em></strong></li>
+							                    <li><p>可取资金</p><strong>--<em></em></strong></li>
+							                    <li><p>参考市值</p><strong class="">--<em></em></strong></li>
+							            	</ul>
+							            </div>
+									</div>
+									<div id="Dollar">
+					       		       <div class="inner">
+							            	<div class="dot"><em></em><em></em><em class="current"></em></div>
+							            	<p>总资产<span>（美元）</span></p>
+							                <strong>--<em></em></strong>
+							                <a href="javascript:void(0);" class="trade my" id="transfer">银证转账</a>
+							            </div>
+							            <div class="more_info">
+							            	<ul>
+							                	<li><p>可用资金</p><strong>--<em></em></strong></li>
+							                	<li><p>参考盈亏</p><strong class="">--<em></em></strong></li>
+							                    <li><p>可取资金</p><strong>--<em></em></strong></li>
+							                    <li><p>参考市值</p><strong class="">--<em></em></strong></li>
+							            	</ul>
+							            </div>
+									</div>
+							</div>
+				       	</div>
+				   </div>
+			       <!--hold_main end-->
+			        <div class="fund_table mt10" style="overflow-y:auto;">
+			           	<div class='ce_table position_div'></div>
+			        </div>
+			        <div class="no_data" style="display:none;padding-top: 50px;">
+   						<span class="icon"></span>
+       					<p style="text-align:center;">暂无持仓记录</p>
+     			    </div>
+     			    
+     			</div>    
+     			
+     			
+    		    <div class="iscroll_pullUp" style="display: none;">
+	               	<span class="pullUpIcon"></span>
+	               	<div class="pullUpLabel">上拉加载下一页</div>
+	            </div>
+	        </div>
+       	</div>
+       	
+    </section>
+</div>
+</body></html>
