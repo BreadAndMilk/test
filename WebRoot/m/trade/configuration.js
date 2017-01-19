@@ -146,9 +146,7 @@ define(function(require, exports, module) {
 					}
 					
 				}
-				
 				$.service.ajax.request(urls, params, $.proxy(callback,this));*/
-				
 			}
 	   },
 		/**
